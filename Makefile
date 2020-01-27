@@ -1,4 +1,4 @@
-corrector.far: corrector.grm slownik2.txt
+corrector.far: corrector.grm Slownik1.txt
 	thraxcompiler --input_grammar=$< --output_far=$@
 
 clean:
