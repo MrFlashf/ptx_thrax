@@ -1,0 +1,10 @@
+#!/bin/bash
+
+printf "Korektor niechlujnej polszczyzny"
+printf "\n"
+
+printf "Przykład 1. Input: napisąmi \n"
+echo napisąmi | thraxrewrite-tester --noutput=1 --far=corrector.far --rules=corrector | cut -d ' ' -f 3-6
+
+printf "\nPrzykład 2. Input: nierozkopujacemu\n"
+echo nierozkopujacemu | thraxrewrite-tester --noutput=1 --far=corrector.far --rules=corrector | cut -d ' ' -f 3-6
